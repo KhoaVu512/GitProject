@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--<p>select a new car</p>-->
+
+<!--<select id="mySelect">-->
+<!--    <option value="Audi">Audi</option>-->
+<!--    <option value="Mercedes">Mercedes</option>-->
+<!--    <option value="BMW">BMW</option>-->
+<!--    <option value="Volvo">Volvo</option>-->
+<!--</select>-->
+
+<!--<p onmouseover="mouseover()" onmouseout="mouseout()" id="demo">This is a text</p>-->
+
+<div id="messageDiv">
+    <button type="button" onclick="showMessage()">Click me</button>
+</div>
+<button type="button" onclick="showMassage()">Click me!</button>
+
+<script>
+    function showMassage() {
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+        document.write('Xin chao!')
+        console.log('Xin chao!');
+        alert('Xin chào!');
+    }
+</script>
+</body>
+</html>
