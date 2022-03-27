@@ -1,18 +1,35 @@
 * {
     box-sizing: border-box;
 }
-h1  {
+.header5 {
+    width: 50%;
+}
+
+h1 {
     text-align: center;
 }
-div {
-width: 70%;
-}
-table ,th,td {
+
+
+.table, th, td {
     border: 1px solid;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.tb1 {
+    border: 1px none;
+    margin-bottom: 20px;
+    color: blue;
+
+}
+
+.C1 {
+    background-color: yellowgreen;
+}
+.C2 {
+    background-color: yellow;
 }
 
