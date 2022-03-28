@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        th, td {
+            width: 80px;
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        input {
+            height: 16px;
+        }
+
+        select {
+            width: 100px;
+            height: 18px;
+        }
+
+        option {
+            height: 20px;
+        }
+    </style>
+    <script src="bT.js"></script>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td style="text-align: center">Amount</td>
+            <td></td>
+            <td class="para">From Currency</td>
+            <td></td>
+            <td class="para">To Currency</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="amount" placeholder="1"></td>
+            <td></td>
+            <td>
+                <select id="fromCurrency">
+                    <option value="23000"> USD</option>
+                    <option value="1">VND</option>
+                </select></td>
+            <td></td>
+            <td>
+                <select id="toCurrency">
+                    <option value="1"> VND</option>
+                    <option value="23000">USD</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" id="inputValue" onclick="valueMoney()">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td><p id="result">result= </p></td>
+        </tr>
+    </table>
+</form>
+
+
+
+
+</body>
+</html>
