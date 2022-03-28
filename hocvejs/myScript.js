@@ -16,11 +16,22 @@
 // // console.log(name);
 // document.getElementById("demo").innerHTML = name;
 
-// const pass = 4.5;
-// const math = 9;
-// const phys = 9.5;
-// const mec = 8;
-//
+// let pass;
+// let math;
+// let phys;
+// let tb;
+// let to;
+// pass = +prompt("nhap diem vat ly: ")
+// math = +prompt("nhap diem toan: ")
+// phys = +prompt("nhap diem hoa:")
+// tb = (pass + math + phys) / 3;
+// to = pass + math + phys;
+// document.write("diem trung binh: " + tb);
+// document.write("</br>")
+// document.write("diem tong: " + to);
+
+
+
 // function do_something() {
 //     const selectValue = document.getElementById("mySelect").value;
 //     alert(selectValue)
