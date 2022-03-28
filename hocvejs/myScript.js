@@ -44,3 +44,18 @@
 // function showMessage() {
 //     document.getElementById("messageDiv").innerHTML = 'Xin Chao m!';
 // }
+//
+// let cel;
+// let fah;
+// cel = prompt("nhap do C: ");
+// fah = cel*9/5 + 32;
+//
+// document.write("nhiet do f la: " + fah)
+
+// let r ;
+// r = prompt("nhap ban kinh: ");
+// let s = 3.14 * r * r;
+// let c = 3.14 * 2 * r;
+// document.write("dien tich hinh tron la : " + s);
+// document.write("</br>");
+// document.write("chu vi hinh tron la : " + c);
