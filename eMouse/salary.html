@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="position: relative">
+<!--<h1 id="mouse-h1">Mouse Event</h1>-->
+<img id="ball" src="download.jpeg" style="position: absolute;left: 200px;top: 100px" height="225" width="225"/>
+<script>
+    /*
+    //Sự kiện bàn phím - "Keyboard Event"
+    //Keydown
+    //Keyup
+    //Keypress
+    // window.addEventListener("keydown",inputKeyboard)
+    //
+    // function inputKeyboard(evt) {
+    //   console.log(evt.key)
+    // }
+    //Sự kiện chuột - Mouse Event
+    //click
+    //mouseover
+    //mouseout
+    // let m = document.getElementById('mouse-h1');
+    // m.addEventListener("mouseover",function () {
+    //   m.innerHTML = "Chuột đã chạy qua đây";
+    // })
+    //
+    // m.addEventListener("mouseout",function () {
+    //   m.innerHTML = "Chuột đã chạy mất rồi";
+    // })
+    //
+    // m.addEventListener("click",function () {
+    //   m.innerHTML = "Ối dồi ôi";
+    // })
+     */
+    window.addEventListener("keydown", moveBall);
+
+    function moveBall(abc) {
+        let left = document.getElementById('ball').style.left;
+        let top = document.getElementById('ball').style.top;
+        let next1;
+
+        switch (abc.key) {
+            case "d":
+                next1 = parseInt(left) + 10;
+                break;
+            case "a":
+                next1 = parseInt(left) - 10;
+                break;
+            case "w":
+                next2 = parseInt(top) - 10;
+                break;
+            case "s":
+                next2 = parseInt(top) + 10;
+                break;
+        }
+
+        document.getElementById('ball').style.left = next1 + "px";
+        document.getElementById('ball').style.top = next2 + "px";
+
+    }
+
+</script>
+</body>
+</html>

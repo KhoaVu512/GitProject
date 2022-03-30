@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="vaN" class="numN" placeholder="1">
+<button type="button" onclick="getNet()">Tinh so ngay</button>
+<p id="display"></p>
+
+
+<script>
+    function getNet() {
+        let numN = +document.getElementById("vaN").value;
+        console.log(numN);
+        switch (numN) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                numN = 'thang co 31 ngay';
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                numN = 'thang co 30 ngay'
+                break;
+            case 2:
+                numN = 'thang co 28 hoac 29 ngay'
+                break;
+            default:
+                numN = 'khong co thang nay';
+                break;
+        }
+        document.getElementById('display').innerHTML = numN
+    }
+
+
+</script>
+</body>
+</html>
